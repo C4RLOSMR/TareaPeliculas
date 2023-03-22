@@ -67,9 +67,9 @@ namespace Pelicula
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
 
             Pelicula p2 = new Pelicula();
-            p2.SetTitulo("THE LORD OF THE RINGS : THE RETURN OF THE KING");
+            p2.SetTitulo("THE LORD OF THE RINGS: THE RETURN OF THE KING");
             p2.SetAño(2003);
             Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
-        }
-    }
+        }  
+    } 
 }
