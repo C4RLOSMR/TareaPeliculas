@@ -26,9 +26,10 @@ namespace Pelicula
 
         }
 
-        public Pelicula(String titulo, Int16 año)
+        public Pelicula(String Titulo, Int16 Año)
         {
-               
+               titulo = Titulo;
+               año = Año;
         }
 
 
@@ -46,8 +47,6 @@ namespace Pelicula
 
 
     }
-
-
 
     public class Actor
     {
@@ -67,7 +66,9 @@ namespace Pelicula
             Año = b;
         }
 
+        
         //Métodos 
+
         public void Imprime()
         {
             Console.WriteLine($"{Nombre} ({Año})");
@@ -81,16 +82,13 @@ namespace Pelicula
     {
         static void Main(string[] args)
         {
-            Pelicula p1 = new Pelicula();
-            p1.SetTitulo("THE GODFATHER");
-           
-            p1.SetAño(1972);
+            Pelicula p1 = new Pelicula("THE GODFATHER", 1972);
+            
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-            Pelicula p2 = new Pelicula();
-            p2.SetTitulo("THE LORD OF THE RINGS: THE RETURN OF THE KING");
-            p2.SetAño(2003);
+            Pelicula p2 = new Pelicula("THE LORD OF THE RINGS: THE RETURN OF THE KING", 2003);
             Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
+
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine();
