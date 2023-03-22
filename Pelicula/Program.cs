@@ -7,8 +7,8 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
-        string titulo, director, pais;
-        Int16 año;
+        private string titulo, director, pais;
+        private Int16 año;
     
         public string GetTitulo(){return titulo;}
         public string GetDirector(){return director;}
