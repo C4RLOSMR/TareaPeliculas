@@ -20,9 +20,17 @@ namespace Pelicula
         public void SetPais(string NuevoPais){pais = NuevoPais;}
         public void SetAño(Int16 NuevoAño){año = NuevoAño;}
 
+        public Pelicula()
+        {
+
+        }
+
+        public Pelicula(String titulo, Int16 año)
+        {
+               
+        }
 
 
-/*
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
@@ -33,14 +41,14 @@ namespace Pelicula
         {
      //       Console.WriteLine($"{titulo} ({año})");
 
-        }*/
+        }
 
 
     }
 
 
 
-   /* public class Actor
+    public class Actor
     {
         //Propiedades
 
@@ -52,7 +60,7 @@ namespace Pelicula
         {
             Console.WriteLine($"{Nombre} ({Año})");
         }
-    }*/
+    }
 
     // Puedes probar tu código en Main() pero lo importante
     // es que pase las pruebas
